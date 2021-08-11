@@ -1,40 +1,210 @@
 body {
   font-family: 'Nunito', Arial, sans-serif;
   font-size: 12px;
-}
-
-h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-/*
-banner image
-https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg
+.flex{
+  display: flex;
+}
 
+h1, h2, h3{
+  margin: 0px;
+}
 
-https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg
-https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg
-https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg
+.header{
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
 
-*/
-/**
-For banner over lay add this class to your div
-<div class="banner__container">
-  <div>
-      <!-- content goes here -->
-  </div>
-</div>
-*/
-.banner__container {
+.logo img{
+  margin-left: 20px;
+  width: 90px; 
+  height: 30px; 
+  display: block; 
+}
+.menu ul li{
+  list-style-type: none;
+  display: inline;
+  padding: 10px;
+  margin: 5px;
+  font-weight: bolder;
+  font-size: 16px;
+  
+}
+
+.main-background{
+  background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg
+);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  background-color:lavender;
+  height: 700px;
+  color: white;
   position: relative;
+
 }
 
-.banner__container:before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.4);
-  content: "";
+
+.button button{
+  display: inline-block;
+  text-align: center;
+  background-color: red;
+  border: none;
+  text-decoration: none;
+  padding: 15px;
+  margin-top: 20px;
+  color: white;
+  font-size: 16px;
+  transition-duration: 0.4s;
+
 }
+
+.button button:hover{
+  background-color: #4CAF50; /* Green */
+    color: white;
+    cursor: pointer;
+}
+
+
+.locals-section{
+  background-color: lavender;
+  height: 200px;
+  padding: 20px;
+  justify-content: space-between;
+  align-content: center;
+  font-size: 16px;
+
+}
+
+.box_title1{
+  background-color: grey;
+  padding-left: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 610px;
+}
+
+.box_content1{
+  background-color: white;
+  padding: 15px;
+  width: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_logo1 img{
+  height: 70px;
+  width: 70px;
+  margin-right: 10px;
+}
+
+.box_title2{
+  background-color: grey;
+  padding-left: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 620px;
+}
+
+.box_content2{
+  background-color: white;
+  padding: 15px;
+  width: 610px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box_logo2 img{
+  height: 70px;
+  width: 70px;
+  margin-right: 10px;
+}
+
+.sec-section{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+
+}
+
+.grid{
+  display: grid;
+}
+
+.row{
+  margin: 20px;
+  grid-template-columns: 400px 400px 400px;
+
+}
+
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  position: relative;
+
+}
+
+.center1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: black;
+}
+
+.center2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: black;
+}
+
+.center3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: black;
+
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.footer{
+  background-color: gray;
+  text-align: center;
+  padding: 3px;
+  font-size: 15px;
+}
+
+.horizontal{
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
